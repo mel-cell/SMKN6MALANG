@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Menu, Search } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -160,7 +160,13 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* Logo Placeholder */}
           <div className="h-10 w-10">
-            <img src="/logo.png" alt="" />
+            <Image
+              src="/logo.png"
+              alt="Logo SMK Negeri 6 Malang"
+              width={40}
+              height={40}
+              className="h-full w-full object-contain"
+            />
           </div>
           <div className="hidden md:block pt-1 pl-0.5">
             <p className="text-sm select-none font-bold leading-none">
