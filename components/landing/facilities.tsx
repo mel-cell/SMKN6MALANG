@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 // import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -69,23 +70,25 @@ export function FacilitiesSection() {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="facility-grid flex-1 grid grid-cols-2 gap-4 h-96">
             <div className="facility-image-1 relative rounded-2xl overflow-hidden shadow-lg h-full">
-              <img
-                src="/foto1.webp"
+              <Image
+                src="./foto1.webp"
                 alt="Fasilitas 1"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                width={500}
+                height={500}
               />
             </div>
             <div className="grid grid-rows-2 gap-4 h-96">
               <div className="facility-image-2 relative rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src="/foto2.webp"
+                <Image
+                  src="./foto2.webp"
                   alt="Fasilitas 2"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="facility-image-3 relative rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src="/foto3.webp"
+                <Image
+                  src="./foto3.webp"
                   alt="Fasilitas 3"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />

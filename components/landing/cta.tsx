@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,8 +53,8 @@ export function CtaSection() {
 
               {/* Image */}
               <div className="relative z-10 px-4">
-                <img
-                  src="/cta.png"
+                <Image
+                  src="./cta.png"
                   alt="Siswa SMK Negeri 6"
                   className="w-full h-auto object-cover rounded-xl"
                 />

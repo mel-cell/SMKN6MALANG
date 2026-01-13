@@ -88,7 +88,7 @@ export function PrincipalMessageSection() {
           <div className="principal-image-section flex-1 relative order-2 lg:order-1">
             <div className="relative z-20 max-w-md mx-auto">
               <Image
-                src="/sambutan.png"
+                src="./sambutan.png"
                 alt="Kepala Sekolah"
                 className="w-full h-auto object-cover"
                 width={500}

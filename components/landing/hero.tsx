@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const words = ["Teknik", "Industri", "Teknologi"];
 
@@ -145,8 +146,8 @@ export function HeroSection() {
             {/* Yellow Abstract Blob Background */}
             <div className="hero-blob absolute -top-10 -right-10 lg:right-0 w-[120%] h-[120%] lg:w-[600px] lg:h-[600px] rounded-full blur-sm opacity-20 lg:opacity-100 -z-10 lg:translate-x-20"></div>
             <div className="hero-image-float relative z-10">
-              <img
-                src="/header.png"
+              <Image
+                src="./header.png"
                 alt="Students"
                 className="w-full object-cover aspect-4/3 lg:aspect-square"
               />
