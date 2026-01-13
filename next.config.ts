@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const repoName = "SMKNegeri6Malang"; // Sesuaikan dengan nama repo GitHub mu
+const repoName = "SMKN6MALANG"; 
 
 const nextConfig: NextConfig = {
   images: {
