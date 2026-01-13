@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Badge } from "@/components/ui/badge";
 import { Camera, Image as ImageIcon } from "lucide-react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,9 +111,11 @@ export default function GaleriPage() {
                 className="galeri-item break-inside-avoid relative group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-pointer"
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={img.src}
                     alt={img.caption}
+                    width={600}
+                    height={400}
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">

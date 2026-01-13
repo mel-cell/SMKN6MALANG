@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { generatePosts } from "../page";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,7 +123,7 @@ export default function BlogPostDetail() {
       {/* Featured Image */}
       <section className="featured-image container mx-auto px-16 max-w-5xl mb-12">
         <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
             alt="Coding Workshop"
             className="object-cover w-full h-full"
@@ -242,7 +243,7 @@ export default function BlogPostDetail() {
               <div key={item.id} className="blog-post-card">
                 <Card className="relative border-0 group shadow-none before:absolute before:inset-0 before:z-10 before:border before:border-gray-200 before:rounded-xl before:transition hover:before:border-2 hover:before:border-blue-600 focus:before:border-2 focus:before:border-blue-600 hover:before:shadow-lg h-full flex flex-col before:pointer-events-none pt-0 overflow-hidden">
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

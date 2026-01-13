@@ -14,6 +14,7 @@ import {
   ArrowRight,
   Download,
 } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -204,9 +205,11 @@ export default function PendaftaranPage() {
                 {/* Glow Effect */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                  <img
-                    src="/ppdb-poster.webp"
+                  <Image
+                    src="./ppdb-poster.webp"
                     alt="Poster PPDB SMKN 6 Malang"
+                    width={600}
+                    height={800}
                     className="w-full h-auto object-cover max-h-[600px]"
                   />
                 </div>

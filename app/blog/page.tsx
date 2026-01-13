@@ -4,6 +4,7 @@ import { useState, useMemo, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Search, Calendar, User, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Input } from "@/components/ui/input";
@@ -210,10 +211,11 @@ export default function BlogPage() {
                 <div key={post.id} className="blog-post-card">
                   <Card className="relative border-0 group shadow-none before:absolute before:inset-0 before:z-10 before:border before:border-gray-200 before:rounded-xl before:transition hover:before:border-2 hover:before:border-blue-600 focus:before:border-2 focus:before:border-blue-600 hover:before:shadow-lg h-full flex flex-col before:pointer-events-none pt-0 overflow-hidden">
                     <div className="relative h-48 overflow-hidden">
-                      <img
+                      <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <Badge className="absolute top-4 left-4 bg-white/90 text-blue-700 hover:bg-white border-none shadow-sm backdrop-blur-sm z-20">
                         {post.category}

@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, GraduationCap, Briefcase, Users, Info } from "lucide-react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,11 +88,12 @@ export default function TentangSekolahPage() {
       <section className="py-16">
         <div className="container mx-auto px-16">
           <div className="history-section grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="history-img">
-              <img
-                src="/smkn6.jpg" // Using existing asset as placeholder
+            <div className="history-img relative h-[400px] w-full">
+              <Image
+                src="./smkn6.jpg" // Using existing asset as placeholder
                 alt="Gedung SMK Negeri 6 Malang"
-                className="rounded-2xl shadow-lg w-full object-cover h-[400px]"
+                fill
+                className="rounded-2xl shadow-lg object-cover"
               />
             </div>
             <div className="history-text">

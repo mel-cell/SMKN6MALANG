@@ -16,6 +16,7 @@ import {
   Clock,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -274,9 +275,11 @@ export default function PPDBPage() {
               <div className="floating-blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-yellow-400/20 rounded-full blur-2xl -z-10"></div>
 
               <div className="relative z-10 bg-white p-3 rounded-3xl shadow-2xl border border-slate-100 rotate-2 hover:rotate-0 transition-transform duration-500">
-                <img
-                  src="/ppdbimage.png"
+                <Image
+                  src="./ppdbimage.png"
                   alt="Poster PPDB"
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-2xl"
                 />
               </div>

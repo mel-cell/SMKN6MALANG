@@ -19,6 +19,7 @@ import {
   Users,
   ExternalLink,
 } from "lucide-react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -220,9 +221,11 @@ export default function MitraIndustriPage() {
                     <div
                       className={`h-20 w-20 p-2 rounded-2xl border ${partner.color} shrink-0 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden`}
                     >
-                      <img
+                      <Image
                         src={partner.logo}
                         alt={partner.name}
+                        width={80}
+                        height={80}
                         className="w-full h-full object-contain"
                       />
                     </div>

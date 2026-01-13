@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-6 text-black">
               <div className="h-10 w-10">
-                <img src="/logo.png" alt="" />
+                <Image src="./logo.png" alt="" />
               </div>
               <div>
                 <p className="text-sm font-bold leading-none">SMK NEGERI 6</p>
