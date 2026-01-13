@@ -161,7 +161,7 @@ export function Navbar() {
           {/* Logo Placeholder */}
           <div className="h-10 w-10">
             <Image
-              src="/logo.png"
+              src="./logo.png"
               alt="Logo SMK Negeri 6 Malang"
               width={40}
               height={40}
